@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>About us</title>
+    <style>
+        div,
+        p {
+            width: 300px;
+            border: 5px solid rebeccapurple;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .btn1 {
+            background-color: darkgreen;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .btn1 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        .btn1 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        
+        .btn1:hover span {
+            padding-right: 25px;
+        }
+        
+        .btn1:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        .btn2 {
+            background-color: darkgreen;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        img {
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".btn1").mousemove(function() {
+                $("div").show();
+            });
+            $(".btn1").mouseleave(function() {
+                $("div").hide()
+            });
+            $(".btn2").mouseover(function() {
+                $("p").show();
+            });
+
+
+        });
+    </script>
+</head>
+
+<body background="back.jpg" style="background-repeat: no-repeat;">
+
+
+
+    <h2 style="color:indigo; font-family:Arial, Helvetica, sans-serif; text-align: center; background-color: lawngreen;">Excellent Academy</h2>
+
+
+    <hr><img align="right" src="./logo.jpg"><br><br>
+
+    <button class="btn1" style="vertical-align:middle"><span>Contact us :</span></button><br>
+
+
+    <div style="color:white; font-family:cursive;">
+        Mobile Number :7666789660 / 8421626375 <br> Email Address : tanmay_Kulthe12x2@gmail.com / theomkar003@gmail.com.
+    </div>
+    <br><br><br><button class="btn2">About Us:</button>
+
+    <p style="color: cornsilk;">
+        Excellence academy is the prime destination for students aspiring a career in Commerce. At Excellence, we work in unison to ensure the brighter future of students. Everything we do at Excellence traces back to our mission: <b style="color:lawngreen;"><i><u>Transforming Individuals into Professionals</u></i></b>.<br>        We proudly host the best faculty in the fraternity to cater to the needs of students. Every mentor at Excellence works passionately to ensure that students achieve conceptual clarity instead of just bookish knowledge. They go out of the way so
+        that the students become pragmatic and socio-economically aware professionals.<br> <b style="color: lawngreen;"><u>Best faculty in the fraternity.</u></b> We work hard to ensure that students have an ideal environment for learning. This includes:
+        Ultra-modern Classrooms: Fully air-conditioned and gadget ready Safe and secure cyber environment Easy access from Pune City and PCMC area Smart Card Attendance Acess to personal contacts of faculty Interaction with faculty over social media
+    </p>
+
+
+</body>
+
+</html>
